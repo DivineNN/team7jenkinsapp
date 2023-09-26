@@ -7,7 +7,7 @@ pipeline{
 
 			}
 		}
-		stages('2-artifactbuild'){
+		stage('2-artifactbuild'){
 			steps{
 				sh 'df -h'
 
