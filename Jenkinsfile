@@ -17,7 +17,16 @@ pipeline{
 			steps{
 				sh 'lscpu'
 			}
+		}	
+		stage('4-deploy'){
+			steps{
+				echo "we are on pipeline as a code"
+			}
+		}
+		stage('5-security_check'){
+			steps{
+				sh 'bash -x /var/lib/jenkins/workspace/team7-pipeline-demo1/pipeline.sh'
+			}
 		}
 	}
-
 }
