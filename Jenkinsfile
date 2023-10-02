@@ -13,6 +13,7 @@ pipeline{
 
 			}
 		}
+        parallel{
 		stage('3-unitest'){
 			steps{
 				sh 'lscpu'
@@ -22,6 +23,7 @@ pipeline{
 			steps{
 				echo "we are on pipeline as a code"
 			}
+		}
 		}
 		stage('5-security_check'){
 			steps{
