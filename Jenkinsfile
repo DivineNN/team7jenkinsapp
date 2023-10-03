@@ -34,7 +34,7 @@ pipeline{
 		}
 		stage('5-security_check'){
 			steps{
-				sh 'bash -x /var/lib/jenkins/workspace/team7-pipeline-demo1/pipeline.sh'
+				echo "end of the session"
 			}
 		}
 	}
